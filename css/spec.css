@@ -1,0 +1,375 @@
+
+:root{
+    --color-1:#A2A2A1FF;
+    --color-2:#F1F4FFFF;
+}
+
+/* admin login */
+
+#login{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#admin-form-grid{
+    grid-column: 3/5;
+    padding-top:2rem;
+}
+#login input{
+    display:block;
+    width:100%;
+    margin-bottom:2rem;
+    padding:0.5rem 0.5rem;
+    border-radius:5px;
+    border-width: 0;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+#login button{
+    padding:0.5rem 2rem;
+    font-size: 1.1rem;
+    margin-top:1.3rem;
+    cursor: pointer;
+}
+
+
+/* admin index */
+
+#side-nav {
+    position:fixed;
+    top:0;
+    left:0;
+    width:200px;
+    padding:5rem 2rem;
+    display:flex;
+    flex-direction: column;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    height:100vh;
+    overflow: hidden;
+}
+#prof-bars{
+    display:none;
+}
+#prof-cancel{
+    position:relative;
+    right:140px;
+    bottom:20px;
+    font-size:2rem;
+    display: none;
+    z-index: 30;
+}
+#admin-info{
+    flex:1;
+    margin-left:1rem;
+}
+#admin-img img{
+    height:100px;
+    width:100px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+#admin-name{
+    margin-left:1.2rem;
+    margin-top:1rem;
+    font-weight: bold;
+    font-size:1.3rem;
+}
+#nav-options{
+    flex:2;
+}
+#nav-options a{
+    text-decoration: none;
+    color:var(--color-1);
+    display:block;
+    margin-bottom:1rem;
+}
+#nav-options a:hover{
+    text-decoration: underline;
+}
+#author-button{
+    margin-bottom:1rem;
+    border-width:0;
+    background-color: var(--color-2);
+    color:var(--color-1);
+    font-size:1rem;
+    cursor: pointer;
+    outline:none;
+}
+#author-button i{
+    margin-left:1rem;
+}
+#author-container{
+    display:none;
+}
+
+#welcome{
+    margin-left:200px;
+    padding:5rem 2rem 2rem 2rem;
+    background-color: #f4f4f4;
+    height:100vh;
+    overflow: hidden;
+    color:var(--color-1);
+}
+#welcome h1{
+    font-size:2.5rem;
+    white-space: nowrap;
+    margin-bottom:2rem;
+}
+
+
+
+/* Author dropdown */
+#authors-link{
+    margin-bottom:0;
+}
+
+
+/* Profile Picture */
+#profile-picture{
+    text-align: center;
+}
+#profile-picture img{
+    height:200px;
+    width:200px;
+    object-fit: cover;
+    border-radius:100%;
+}
+#profile-name {
+    margin-top:3rem;
+    text-align: center;
+    font-weight: bold;
+    font-size:1.5rem;
+}
+#profile-occ{
+    text-align: center;
+    margin-top:0.5rem;
+    font-size:1.2rem;
+}
+#profile-quote{
+    text-align: center;
+    max-width:500px;
+    margin:1rem auto;
+}
+#profile-social{
+    text-align: center;
+    margin-top:0.5rem;
+}
+#profile-social a{
+    color:#333;
+    margin-right:0.3rem;
+}
+#welcome #edit-container a{
+    display:inline-block;
+    text-align: center;
+    text-decoration: none;
+    color:#f4f4f4;
+    margin-top:3rem;
+    background-color:gray;
+    padding:0.5rem;
+}
+#edit-container{
+    width: 100%;
+    text-align: center;
+}
+
+/* Profile Page */
+#edit-form-grid form{
+    margin-bottom:4rem;
+}
+.save-forms{
+    margin-bottom: 4rem;
+}
+#edit-form label {
+    margin-right:1rem;
+}
+#edit-form-grid input{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-width: 0;
+    width:30%;
+    padding:0.5rem;
+    margin:0 1rem;
+}
+#edit-form-grid textarea{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    border-width: 0;
+    padding:0.5rem;
+    width:40%;
+    height:70px;
+    margin:0 1rem;
+}
+#edit-form-grid #file{
+    padding:0;
+}
+#edit-form-grid button{
+    display: inline-block;
+    text-align: center;
+    padding:0.1rem 0.5rem;
+    color:var(--color-2);
+    background-color: gray;
+    border-width: 0;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    cursor: pointer;
+}
+
+/* Profile all table */
+
+table {
+    border:1px solid #333;
+    border-collapse: collapse;
+}
+table tr:nth-child(odd) {
+    background-color: var(--color-2);
+    color:var(--color-1);
+}
+table tr:nth-child(even){
+    background-color: var(--color-1);
+    color:var(--color-2);
+}
+th, td{
+    padding:0.6rem;
+}
+table p{
+    display:inline;
+}
+table a{
+    margin-left:1rem;
+}
+
+
+/* Add Article */
+#add-grid{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+#add-article input{
+    display:block;
+    width: 100%;
+    grid-column: 2/5;
+    padding:0.5rem;
+    margin-bottom:2rem;
+    border-width:0;
+    border-radius:5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+#add-article textarea{
+    grid-column: 2/5;
+    padding:0.5rem;
+    margin-bottom:2rem;
+    border-width:0;
+    border-radius:5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    height:200px;
+}
+#add-article div{
+    grid-column: 2/5;
+    text-align: center;
+}
+#add-article button{
+    border-width:0;
+    border-radius:5px;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    padding:0.5rem;
+    color:var(--color-2);
+    background-color: gray;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+/* Logout */
+
+#logout-button{
+    position:fixed;
+    top:40px;
+    right:40px;
+    z-index: 1000;
+}
+#logout-button button{
+    text-align: center;
+    padding:0.5rem;
+    color:var(--color-2);
+    background-color: gray;
+    border-width: 0;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+
+/* Search */
+
+#no-result{
+    margin:2rem 0rem 0rem 2rem;
+}
+
+
+
+
+@media(max-width:950px){
+    #edit-form-grid #file{
+        width:40%;
+    }
+}
+
+
+@media(max-width:768px){
+    #side-nav{
+        display:none;
+        width:100vw;
+        text-align: center;
+        font-size: 2rem;
+    }
+    #admin-name{
+        margin-left:0;
+    }
+    #author-button{
+        font-size:2rem;
+    }
+   
+    #prof-bars{
+        display:block;
+        margin:3rem 0rem 3rem 3rem;
+    }
+    #welcome{
+        margin-left:0;
+        padding-left:1rem;
+        padding-right: 0px;
+    }
+    #welcome h1{
+        margin-left:3rem;
+    }
+    #profile-picture img{
+        height:150px;
+        width:150px;
+        margin-left: 3rem;
+    }
+    #edit-form-grid input{
+        width:40%;
+    }
+}
+
+
+@media(max-width:480px){
+    #welcome{
+        padding:5rem 1rem;
+        padding-right:0;
+    }
+    #welcome h1{
+        font-size:2rem;
+        white-space:nowrap ;
+    }
+    label{
+        display:block;
+        margin-bottom:1rem;
+    }
+    #edit-form-grid input{
+        width:65%;
+    }
+    #edit-form-grid textarea{
+        width:65%;
+    }
+    #edit-form-grid #file{
+        width:70%;
+    }
+    #logout-button{
+        top:40px;
+        right:20px;
+    }
+}
